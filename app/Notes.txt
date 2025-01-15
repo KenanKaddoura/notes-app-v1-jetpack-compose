@@ -1,0 +1,38 @@
+Notes Related to the Project and Clean Architecture Principle:
+- The main layers:
+1. presentation -> ui
+2. data -> everything related to data -> api / db
+3. domain -> the connection layer / logic / repo. def.
+
+- As the module is small as it is replaceable and fast to build.
+- It is better to build the app according to features and make each feature from the three layers
+
+- Structure:
+
+--> core
+--> di
+--> feature_name
+
+----> data
+------> data_source
+------> repository
+
+----> domain
+------> model
+------> repository
+------> use_case
+------> util
+
+----> presentation
+------> aaa
+------> aaa
+------> util
+
+|| What's Dao ? ?
+|| What's Coroutines
+|| What's dagger Hilt
+|| Learn about canvas
+
+- The job of the repository:
+ -- It access the data sources (like database or api) directly.
+ -- It handles the data sources and which data should be forwarded to the use cases.
