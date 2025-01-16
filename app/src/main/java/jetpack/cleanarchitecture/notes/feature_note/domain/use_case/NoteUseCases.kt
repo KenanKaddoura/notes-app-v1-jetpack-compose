@@ -4,5 +4,6 @@ package jetpack.cleanarchitecture.notes.feature_note.domain.use_case
 // we can extend it as needed
 data class NoteUseCases (
     val getNotesUseCase: GetNotesUseCase,
-    val deleteNoteUseCase: DeleteNoteUseCase
+    val deleteNoteUseCase: DeleteNoteUseCase,
+    val addNoteUseCase: AddNoteUseCase
 )

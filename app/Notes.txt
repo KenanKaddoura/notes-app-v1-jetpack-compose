@@ -32,6 +32,7 @@ Notes Related to the Project and Clean Architecture Principle:
 || What's Coroutines
 || What's dagger Hilt
 || Learn about canvas
+|| Dependency Injection
 
 - The job of the repository:
  -- It access the data sources (like database or api) directly.
