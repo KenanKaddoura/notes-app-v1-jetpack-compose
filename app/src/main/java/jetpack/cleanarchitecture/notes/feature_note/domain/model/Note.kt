@@ -15,7 +15,7 @@ data class Note(
     val color : Int,
     @PrimaryKey val id : Int? = null
 ) {
-    // companion object is like a static memeber
+    // companion object is like a static member
     companion object {
         val notesColor = listOf(BlueNote, RedNote, GreenNote, GrayNote)
     }

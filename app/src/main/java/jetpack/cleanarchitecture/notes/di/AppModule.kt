@@ -11,6 +11,7 @@ import jetpack.cleanarchitecture.notes.feature_note.data.repository.NoteReposito
 import jetpack.cleanarchitecture.notes.feature_note.domain.repository.NoteRepository
 import jetpack.cleanarchitecture.notes.feature_note.domain.use_case.AddNoteUseCase
 import jetpack.cleanarchitecture.notes.feature_note.domain.use_case.DeleteNoteUseCase
+import jetpack.cleanarchitecture.notes.feature_note.domain.use_case.GetNoteUseCase
 import jetpack.cleanarchitecture.notes.feature_note.domain.use_case.GetNotesUseCase
 import jetpack.cleanarchitecture.notes.feature_note.domain.use_case.NoteUseCases
 import javax.inject.Singleton
@@ -45,7 +46,8 @@ object AppModule {
         return NoteUseCases(
             getNotesUseCase = GetNotesUseCase(repository),
             deleteNoteUseCase = DeleteNoteUseCase(repository),
-            addNoteUseCase = AddNoteUseCase(repository)
+            addNoteUseCase = AddNoteUseCase(repository),
+            getNoteUseCase = GetNoteUseCase(repository)
         )
     }
 }
