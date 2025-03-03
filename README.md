@@ -1,5 +1,5 @@
 ## **📒 Notes App – Jetpack Compose**
-**A modern Notes App built using Jetpack Compose, MVVM, and Room Database, inspired by Philipp Lackner's tutorial. The app allows users to create, edit, delete, and sort notes with customizable colors.**
+**A modern Notes App built using Jetpack Compose, MVVM, and Room Database. The app allows users to create, edit, delete, and sort notes with customizable colors.**
 
 
 ### ✨ Features
